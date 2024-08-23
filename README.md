@@ -1,2 +1,2 @@
 # shroom-town
-A online store using React, NextJS, and MongoDB
+An online store using React, NextJS, and MongoDB
