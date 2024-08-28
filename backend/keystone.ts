@@ -9,6 +9,7 @@ import { Product } from './schemas/Product';
 import { User } from './schemas/User';
 import { ProductImage } from './schemas/ProductImage';
 import { insertSeedData } from './seed-data';
+import { SendPasswordResetEmail } from './lib/mail';
 
 const databaseURL =
     process.env.DATABASE_URL || 'mongodb://localhost/keystone-shroom-town';
@@ -28,7 +29,7 @@ const { withAuth } = createAuth({
     },
     passwordResetLink: {
         async sendToken(args) {
-            console.log(args);
+            await SendPasswordResetEmail(args.token, args.identity);
         },
     },
 });
