@@ -10,6 +10,7 @@ import { User } from './schemas/User';
 import { ProductImage } from './schemas/ProductImage';
 import { insertSeedData } from './seed-data';
 import { SendPasswordResetEmail } from './lib/mail';
+import { CartItem } from './schemas/CartItem';
 
 const databaseURL =
     process.env.DATABASE_URL || 'mongodb://localhost/keystone-shroom-town';
@@ -57,6 +58,7 @@ export default withAuth(
             User,
             Product,
             ProductImage,
+            CartItem,
         }),
         ui: {
             // Show the UI only for people who pass this test
