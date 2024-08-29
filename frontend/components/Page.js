@@ -5,7 +5,7 @@ import Header from './Header';
 const GlobalStyles = createGlobalStyle`
  @font-face {
   font-family: 'radnika_next';
-  src: url('/static/radnikanext-medium-webfont.woff2');
+  src: url('/static/Storybook.TTF');
  }
 html {
   --purple: purple;
