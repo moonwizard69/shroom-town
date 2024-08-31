@@ -5,6 +5,7 @@ import Cart from './Cart';
 import Search from './Search';
 
 const Logo = styled.h1`
+  border-radius: 25px;
   font-size: 4rem;
   margin-left: 2rem;
   position: relative;
